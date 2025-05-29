@@ -1,44 +1,39 @@
 [general]
 import = [
-    "C:\\Users\\Inplikt\\AppData\\Roaming\\alacritty\\themes\\themes\\kanagawa_dragon.toml"
-#
-# DOWNLOAD FROM:
-# https://github.com/alacritty/alacritty-theme
-#
-# THEMES:
-#
-# SOFT COLORS:
-#
-# - autumn
-# - citylights
-# - wombat
-# - tomorrow_night
-# - taerminal
-# - remedy_dark
-# - monokai_pro
-# - kanagawa_dragon
-# - kanagawa_wave
-# - everforest_dark
-# - gruvbox_dark
-# - gruvbox_material_hard_dark
-#
-# CONTRAST COLORS:
-#
-# - ayu_dark
-#
-# VIVID:
-#
-# - catppuccin_mocha
-# - enfocado_dark
-# - rose_pine
-# - palenight
-# - night_owl
-#
-# GREY:
-#
-# - doom_one 
-# - nordic
+#    "C:\\Users\\Inplikt\\AppData\\Roaming\\alacritty\\themes\\themes\\taerminal.toml"
 ]
+
+# Default colors
+[colors.primary]
+background = '#1c1c1c'
+foreground = '#f0f0f0'
+
+[colors.cursor]
+background = '#f0f0f0'
+foreground = '#26282a'
+
+# Normal colors
+[colors.normal]
+black   = '#333f4a'
+red     = '#ff4562'
+green   = '#b4fb73'
+yellow  = '#fff854'
+blue    = '#78bcf5'
+magenta = '#ffb2fe'
+cyan    = '#00ffff'
+white   = '#f1f1f1'
+
+# Bright colors
+[colors.bright]
+black   = '#6f6f6f'
+red     = '#ff8598'
+green   = '#d6fcba'
+yellow  = '#fffa80'
+blue    = '#c2e3ff'
+magenta = '#ffc6ff'
+cyan    = '#a1ffff'
+white   = '#ffffff'
+
 
 [env]
 TERM = "xterm-256color"
@@ -46,7 +41,7 @@ COLORTERM = "truecolor"
 LANG = "en_US.UTF-8"
 
 [font]
-size = 11
+size = 12
 
 [font.normal]
 family = "Hack Nerd Font"
@@ -97,12 +92,15 @@ mods = "Command"
 [window]
 decorations = "None"
 dynamic_padding = true
-opacity = 0.8
+opacity = 0.95
 startup_mode = "Maximized"
 
 [window.padding]
 x = 15
 y = 15
+
+[cursor]
+style = { shape = "Beam", blinking = "Always" }
 
 [terminal.shell]
 program = "wsl"
