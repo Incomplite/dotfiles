@@ -30,3 +30,4 @@ alias pip="pip3"
 
 # Lazydocker
 alias ldocker="lazydocker"
+alias lzd="lazydocker"
