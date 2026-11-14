@@ -1,0 +1,169 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "agent_servers": {
+    "kilo": {
+      "type": "registry"
+    },
+    "codex-acp": {
+      "type": "registry"
+    }
+  },
+  "cli_default_open_behavior": "existing_window",
+  "context_servers": {
+    "mcp-server-context7": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "context7_api_key": "ctx7sk-f32a1898-41be-4872-8f15-e87aa81de5e3"
+      }
+    }
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "threads_sidebar": {
+      "position": "right"
+    },
+    "default_model": {
+      "provider": "openai-subscribed",
+      "model": "gpt-6.1-sol",
+      "enable_thinking": true,
+      "effort": "low"
+    },
+    "sandbox_permissions": {
+      "allow_unsandboxed": true
+    },
+    "tool_permissions": {
+      "tools": {
+        "create_directory": {
+          "always_allow": [
+            {
+              "pattern": "^my_sing/"
+            }
+          ]
+        },
+        "mcp:mcp-server-context7:query-docs": {
+          "default": "allow"
+        },
+        "mcp:mcp-server-context7:resolve-library-id": {
+          "default": "allow"
+        },
+        "delete_path": {
+          "always_allow": [
+            {
+              "pattern": "^bot/src/traffic_bot/application/"
+            }
+          ]
+        },
+        "terminal": {
+          "default": "allow"
+        }
+      }
+    },
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "auto_update": false,
+  // "show_completions_on_input": false,
+  "show_edit_predictions": false,
+  "linked_edits": true,
+  "enable_language_server": true,
+  "middle_click_paste": true,
+  "prettier": {
+    "allowed": true,
+  },
+  "completions": {
+    "lsp": true,
+  },
+  "confirm_quit": true,
+  "icon_theme": "Material Icon Theme",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "base_keymap": "VSCode",
+  "minimap": {
+    "show": "auto",
+  },
+  "file_types": {},
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+  "status_bar": {
+    "line_endings_button": true,
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["!ty", "!basedpyright", "pylsp", "!pyright", "ruff"],
+      "format_on_save": "on",
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true,
+      },
+      "remove_trailing_whitespace_on_save": true,
+      "enable_language_server": true,
+    },
+  },
+  "lsp": {
+    "pylsp": {
+      "settings": {
+        "plugins": {
+          "pycodestyle": { "enabled": false },
+          "pylsp_mypy": {
+            "enabled": true,
+          },
+          "pylsp-mypy": {
+            "enabled": true,
+          },
+          "mypy": {
+            "enabled": true,
+          },
+        },
+      },
+    },
+  },
+  "file_scan_exclusions": [
+    // default values below
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    // custom values below
+    "**/__pycache__",
+    // "**/.venv",
+    "**/.idea",
+    "**/.*cache",
+    "**/.vscode",
+  ],
+  "terminal": {
+    "shell": {
+      "program": "cmd.exe",
+    },
+  },
+}
